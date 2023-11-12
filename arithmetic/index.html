@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arithmetic Problems Generator</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <h1>Arithmetic Problems Generator</h1>
+
+  <div>
+    <label for="difficulty">Select Difficulty:</label>
+    <select id="difficulty"></select>
+    <button onclick="generateAndDisplayProblems()">Generate Problems</button>
+  </div>
+  <br/>
+  <div id="problemTable"></div>
+  <br/>
+  <button id="checkButton" onclick="checkAnswers()" style="display: none;">Check Answers</button>
+  <div id="myModal" class="modal">
+     <div class="modal-content">
+        <h1>Congratulations!</h1>
+        <p>All answers are correct!</p>
+        <div class="fireworks" id="fireworks-popup"></div>
+        <button onclick="closeModal()">Close</button>
+      </div>
+  </div>
+
+
+  <script src="assets/problemGenerator.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
+
